@@ -9,6 +9,8 @@
  *
  * ========================================
 */
+
+#include "FreeRTOS.h"
 #include "project.h"
 
 int main(void)

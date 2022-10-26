@@ -6,7 +6,7 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -I../freertos/include -Wno-parentheses" />
       <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
@@ -38,6 +38,38 @@
         <Files Root="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\atomic.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\croutine.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\deprecated_definitions.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\event_groups.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\list.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\message_buffer.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\mpu_prototypes.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\mpu_wrappers.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\portable.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\portmacro.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\projdefs.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\queue.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\semphr.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\stack_macros.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\StackMacros.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\stream_buffer.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\task.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\timers.h</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\include\FreeRTOS.h</File>
+          <File BuildType="BUILD" Toolchain="">FreeRTOSConfig.h</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="STRICT" Path="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn">
+        <Files Root="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn">
+          <File BuildType="BUILD" Toolchain="">..\freertos\croutine.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\event_groups.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\list.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\port.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\queue.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\stream_buffer.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\tasks.c</File>
+          <File BuildType="BUILD" Toolchain="">..\freertos\timers.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn\Generated_Source\PSoC5">

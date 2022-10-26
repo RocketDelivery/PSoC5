@@ -37,6 +37,7 @@
       <Folder BuildType="STRICT" Path="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn">
         <Files Root="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
+          <File BuildType="BUILD" Toolchain="">temperature.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">..\freertos\include\atomic.h</File>
           <File BuildType="BUILD" Toolchain="">..\freertos\include\croutine.h</File>
@@ -58,6 +59,7 @@
           <File BuildType="BUILD" Toolchain="">..\freertos\include\timers.h</File>
           <File BuildType="BUILD" Toolchain="">..\freertos\include\FreeRTOS.h</File>
           <File BuildType="BUILD" Toolchain="">FreeRTOSConfig.h</File>
+          <File BuildType="BUILD" Toolchain="">temperature.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn">
@@ -135,6 +137,20 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED4Pin_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED4Pin.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED4Pin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TempSDA_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TempSDA.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TempSDA.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TempSCL_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TempSCL.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TempSCL.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp_SLAVE.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp_MASTER.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\I2CTemp_PVT.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn\Export\ARM_GCC_Generic">

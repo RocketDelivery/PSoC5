@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoc5\Part1\Source Files\freertos\queue.c">
 <ExpandedNodeIds>
 <v>PSoc5</v>
 <v>PSoc5\Part1</v>
@@ -29,7 +29,6 @@
 <v>PSoc5\Part1\Part1.cydwr\Flash Security</v>
 <v>PSoc5\Part1\Part1.cydwr\EEPROM</v>
 <v>PSoc5\Part1\Header Files</v>
-<v>PSoc5\Part1\Header Files\freertos</v>
 <v>PSoc5\Part1\Header Files\freertos\atomic.h</v>
 <v>PSoc5\Part1\Header Files\freertos\croutine.h</v>
 <v>PSoc5\Part1\Header Files\freertos\deprecated_definitions.h</v>
@@ -51,6 +50,7 @@
 <v>PSoc5\Part1\Header Files\freertos\timers.h</v>
 <v>PSoc5\Part1\Header Files\cyapicallbacks.h</v>
 <v>PSoc5\Part1\Header Files\FreeRTOSConfig.h</v>
+<v>PSoc5\Part1\Header Files\temperature.h</v>
 <v>PSoc5\Part1\Source Files</v>
 <v>PSoc5\Part1\Source Files\freertos</v>
 <v>PSoc5\Part1\Source Files\freertos\croutine.c</v>
@@ -62,6 +62,7 @@
 <v>PSoc5\Part1\Source Files\freertos\tasks.c</v>
 <v>PSoc5\Part1\Source Files\freertos\timers.c</v>
 <v>PSoc5\Part1\Source Files\main.c</v>
+<v>PSoc5\Part1\Source Files\temperature.c</v>
 <v>PSoc5\Part1\Generated_Source</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -80,27 +81,9 @@
 <v>PSoc5\Part1\Part1.cydwr\EEPROM</v>
 <v>PSoc5\Part1\Header Files</v>
 <v>PSoc5\Part1\Header Files\freertos</v>
-<v>PSoc5\Part1\Header Files\freertos\atomic.h</v>
-<v>PSoc5\Part1\Header Files\freertos\croutine.h</v>
-<v>PSoc5\Part1\Header Files\freertos\deprecated_definitions.h</v>
-<v>PSoc5\Part1\Header Files\freertos\event_groups.h</v>
-<v>PSoc5\Part1\Header Files\freertos\FreeRTOS.h</v>
-<v>PSoc5\Part1\Header Files\freertos\list.h</v>
-<v>PSoc5\Part1\Header Files\freertos\message_buffer.h</v>
-<v>PSoc5\Part1\Header Files\freertos\mpu_prototypes.h</v>
-<v>PSoc5\Part1\Header Files\freertos\mpu_wrappers.h</v>
-<v>PSoc5\Part1\Header Files\freertos\portable.h</v>
-<v>PSoc5\Part1\Header Files\freertos\portmacro.h</v>
-<v>PSoc5\Part1\Header Files\freertos\projdefs.h</v>
-<v>PSoc5\Part1\Header Files\freertos\queue.h</v>
-<v>PSoc5\Part1\Header Files\freertos\semphr.h</v>
-<v>PSoc5\Part1\Header Files\freertos\stack_macros.h</v>
-<v>PSoc5\Part1\Header Files\freertos\StackMacros.h</v>
-<v>PSoc5\Part1\Header Files\freertos\stream_buffer.h</v>
-<v>PSoc5\Part1\Header Files\freertos\task.h</v>
-<v>PSoc5\Part1\Header Files\freertos\timers.h</v>
 <v>PSoc5\Part1\Header Files\cyapicallbacks.h</v>
 <v>PSoc5\Part1\Header Files\FreeRTOSConfig.h</v>
+<v>PSoc5\Part1\Header Files\temperature.h</v>
 <v>PSoc5\Part1\Source Files</v>
 <v>PSoc5\Part1\Source Files\freertos</v>
 <v>PSoc5\Part1\Source Files\freertos\croutine.c</v>
@@ -112,7 +95,9 @@
 <v>PSoc5\Part1\Source Files\freertos\tasks.c</v>
 <v>PSoc5\Part1\Source Files\freertos\timers.c</v>
 <v>PSoc5\Part1\Source Files\main.c</v>
+<v>PSoc5\Part1\Source Files\temperature.c</v>
 <v>PSoc5\Part1\Generated_Source</v>
+<v>PSoc5\Part1\Generated_Source\PSoC5</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -150,6 +135,12 @@
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\event_groups.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\I2CTemp.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\I2CTemp_BOOT.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\I2CTemp_INT.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\I2CTemp_MASTER.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\I2CTemp_PM.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\I2CTemp_SLAVE.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED1Pin.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED2Pin.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED3Pin.lst</v>
@@ -160,6 +151,9 @@
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\queue.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\stream_buffer.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\tasks.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\temperature.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\TempSCL.lst</v>
+<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\TempSDA.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\timers.lst</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Part1.elf</v>
 <v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Part1.hex</v>
@@ -171,38 +165,6 @@
 <VisibleNodeIds>
 <v>PSoc5</v>
 <v>PSoc5\Part1</v>
-<v>PSoc5\Part1\CortexM3</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\croutine.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\event_groups.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED1Pin.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED2Pin.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED3Pin.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\LED4Pin.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\list.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\port.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\queue.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\stream_buffer.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\tasks.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Listing Files\timers.lst</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Part1.elf</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Part1.hex</v>
-<v>PSoc5\Part1\CortexM3\ARM_GCC_541\Debug\Part1.map</v>
-<v>PSoc5\Part1\Part1.gpdsc</v>
 <v>PSoc5\Part1\Part1.rpt</v>
 <v>PSoc5\Part1\Part1_timing.html</v>
 </VisibleNodeIds>
@@ -222,6 +184,7 @@
 <v>PSoc5\Part1\System Reference Guides\cy_boot_v6_0</v>
 <v>PSoc5\Part1\cy_pins_v2_20</v>
 <v>PSoc5\Part1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>PSoc5\Part1\I2C_v3_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>PSoc5</v>
@@ -232,15 +195,42 @@
 <v>PSoc5\Part1\System Reference Guides\cy_boot_v6_0</v>
 <v>PSoc5\Part1\cy_pins_v2_20</v>
 <v>PSoc5\Part1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>PSoc5\Part1\I2C_v3_50.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
 </dataGuid>
+<dataGuid v="6c335137-fa19-46ce-bc2d-2fbeb6d5f2a2">
+<CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2 type_name="CyDesigner.Common.ProjMgmt.GUI.CyDependenciesCustomData" version="1">
+<dictName v=".\Part1.cydsn\Part1.cyprj">
+<listName />
+</dictName>
+</CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\Part1.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Part1.cydsn\main.c" />
+<name v=".\freertos\tasks.c" />
+<name v=".\freertos\include\task.h" />
+<name v=".\freertos\event_groups.c" />
+<name v=".\Part1.cydsn\i2c_temp.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1040, 613" SelectedTabbedMdiWindow="447e9c61-d8f0-4913-ab0f-2ca2c1b64b47"><DocumentWindow Key="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn\TopDesign\TopDesign.cysch" Guid="2be3a9ce-e4fb-411b-8581-d5995bd02f0b" /><DocumentWindow Key="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn\main.c" Guid="ad4aad39-3ab5-4c25-9ba3-f91a9c289c4c" /><DocumentWindow Key="C:\Users\Suyoung\src\school\psoc5\PSoc5\freertos\tasks.c" Guid="73266aa4-2bd4-4acb-9e46-4de61b973af9" /><DocumentWindow Key="C:\Users\Suyoung\src\school\psoc5\PSoc5\freertos\include\task.h" Guid="7bfde822-93ca-4b87-80d9-c433a86d8588" /><DocumentWindow Key="C:\Users\Suyoung\src\school\psoc5\PSoc5\freertos\event_groups.c" Guid="20ef2b39-9700-42df-9bc3-ecff88694aca" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="af185790-b05e-42be-98c3-bcfa46bc2f0c" /><DocumentWindow Key="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn\i2c_temp.c" Guid="447e9c61-d8f0-4913-ab0f-2ca2c1b64b47" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

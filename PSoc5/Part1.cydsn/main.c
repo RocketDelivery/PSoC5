@@ -22,6 +22,16 @@ void vApplicationGetTimerTaskMemory(StaticTask_t **ppxTimerTaskTCBBuffer, StackT
     *pulTimerTaskStackSize = configMINIMAL_STACK_SIZE;
 }
 
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName )
+{
+    (void)xTask;
+    (void)pcTaskName;
+    
+    LED4Pin_Write(1);
+    taskDISABLE_INTERRUPTS();
+    for (;;);
+}
+
 static StaticTask_t _blinkLedTask;
 static StackType_t _blinkLedTaskStack[configMINIMAL_STACK_SIZE];
 

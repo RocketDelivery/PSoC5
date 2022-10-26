@@ -6,7 +6,7 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -I../freertos/include -Wno-parentheses" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I..\freertos\include -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -Wno-parentheses" />
       <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
@@ -123,6 +123,18 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED1Pin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED1Pin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED1Pin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED2Pin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED2Pin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED2Pin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED3Pin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED3Pin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED3Pin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED4Pin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED4Pin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED4Pin.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Suyoung\src\school\psoc5\PSoc5\Part1.cydsn\Export\ARM_GCC_Generic">

@@ -63,8 +63,10 @@
 #define configMAX_SYSCALL_INTERRUPT_PRIORITY    0b10011111 // Defines the highest priority of ISR that can call FreeRTOS functions
 #define configMAX_API_CALL_INTERRUPT_PRIORITY   configMAX_SYSCALL_INTERRUPT_PRIORITY
 
+extern void LED4Pin_Write(unsigned char value);
+
 /* Define to trap errors during development. */
-#define configASSERT(x) if( ( x ) == 0 ) { taskDISABLE_INTERRUPTS(); for( ;; ); }
+#define configASSERT( x ) if( ( x ) == 0 ) { taskDISABLE_INTERRUPTS(); LED4Pin_Write(1); for( ;; ); }
 
 /* FreeRTOS MPU specific definitions. */
 #define configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS 0
